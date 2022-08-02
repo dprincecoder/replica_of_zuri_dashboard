@@ -1,0 +1,30 @@
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LandingPage, NeedIndustryExpPage, NewToIndustryPage } from "./pages";
+
+function App() {
+  return (
+    <>
+      {
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />}></Route>
+            <Route index element={<LandingPage />}></Route>
+            <Route
+              path="/newtoindustry"
+              element={<NewToIndustryPage />}
+            ></Route>
+            <Route
+              path="/needindustryexperience"
+              element={<NeedIndustryExpPage />}
+            ></Route>
+
+            <Route path="*" element={<LandingPage />} />
+          </Routes>
+        </BrowserRouter>
+      }
+    </>
+  );
+}
+
+export default App;
