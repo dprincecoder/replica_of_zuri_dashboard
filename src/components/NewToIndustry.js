@@ -6,4 +6,4 @@ const NewToIndustry = () => {
   )
 }
 
-export default NewToIndustry
+export default NewToIndustry;
