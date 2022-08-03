@@ -1,0 +1,139 @@
+.zuriTraining-nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1100;
+  top: 0px;
+  left: auto;
+  right: 0px;
+  background-color: white;
+}
+
+.zuriTraining-navWrapper {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.training-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 250px;
+  height: 70px;
+}
+
+.training-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.training-listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+  letter-spacing: 0.02857em;
+  padding: 6px 8px;
+  border-radius: 5px;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
+}
+
+.training-listItem a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.training-enroll {
+  display: flex;
+  align-items: center;
+}
+
+.enroll-thumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e7332b !important;
+  border: 10px solid #e7332b !important;
+  z-index: 1;
+}
+
+.enroll-thumb-img {
+  width: 100%;
+  height: 100%;
+}
+
+.enroll-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -2rem;
+  /* position: absolute; */
+  width: 162px;
+  height: 50px;
+  /* left: 1277px; */
+  top: 34px;
+  background: #e7332b;
+  border-radius: 87px;
+}
+
+.enroll-text-title {
+  font-size: 1.2rem;
+  padding: 5px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .zuriTraining-navWrapper {
+    padding: 1rem 2rem;
+  }
+  .training-list {
+    display: none;
+  }
+  .training-listItem {
+    margin: 0px 10px 10px 10px;
+  }
+  .enroll-text-wrap {
+    width: 100%;
+    height: 100%;
+    margin-left: -1rem;
+    padding: 0 5px;
+  }
+  .logo-img {
+    width: 120px;
+
+    height: 50px;
+  }
+
+  .enroll-thumbs {
+    width: 60px;
+    height: 50px;
+  }
+}

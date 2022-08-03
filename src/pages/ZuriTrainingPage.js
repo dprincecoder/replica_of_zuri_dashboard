@@ -1,8 +1,10 @@
 import React from "react";
-import { NewToIndustry } from "../components";
+import { 
+  ZuriTraining 
+} from "../components";
 
 const NewToIndustryPage = () => {
-  return <NewToIndustry />;
+  return <ZuriTraining />;
 };
 
 export default NewToIndustryPage;

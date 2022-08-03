@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LandingPage, NeedIndustryExpPage, NewToIndustryPage } from "./pages";
+import { LandingPage, ZuriTrainingPage, ZuriTalentPage } from "./pages";
 
 function App() {
   return (
@@ -10,14 +10,8 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
             <Route index element={<LandingPage />}></Route>
-            <Route
-              path="/newtoindustry"
-              element={<NewToIndustryPage />}
-            ></Route>
-            <Route
-              path="/needindustryexperience"
-              element={<NeedIndustryExpPage />}
-            ></Route>
+            <Route path="/zuri.training" element={<ZuriTrainingPage />}></Route>
+            <Route path="/zuri.talent" element={<ZuriTalentPage />}></Route>
 
             <Route path="*" element={<LandingPage />} />
           </Routes>

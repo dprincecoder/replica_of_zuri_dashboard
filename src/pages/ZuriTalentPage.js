@@ -1,8 +1,8 @@
 import React from "react";
-import { NeedIndustryExp } from "../components";
+import { ZuriTalent } from "../components";
 
 const NeedIndustryExpPage = () => {
-  return  <NeedIndustryExp />;
+  return  <ZuriTalent />;
 };
 
 export default NeedIndustryExpPage;

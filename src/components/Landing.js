@@ -17,21 +17,27 @@ const Landing = () => {
           <h2>Learn, Build, Grow.</h2>
           <p>
             Unlock your Brilliance with our hands-on{" "}
-            <Link to="/newtoindustry">beginner</Link> and{" "}
-            <Link to="https://internship.zuri.team">expert training</Link>. Zuri
-            Team has been immensely successful in creating Link global network of a
-            highly adept intelligent workforce that can help your company
-            achieve their mission-critical{" "}
-            <Link to="/needindustryexperience">projects and goals</Link>
+            <Link to="/zuri.training">beginner</Link> and{" "}
+            <a
+              href="https://internship.zuri.team"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              expert training
+            </a>
+            . Zuri Team has been immensely successful in creating Link global
+            network of a highly adept intelligent workforce that can help your
+            company achieve their mission-critical{" "}
+            <Link to="/zuri.talent">projects and goals</Link>
           </p>
           <div className="btn-div">
-            <Link to="/newtoindustry">
+            <Link to="/zuri.training">
               <button className=" my-btn btn-red">
                 I'm new to the Industry
               </button>
             </Link>
             <br className="d-block d-md-none" />
-            <Link to="/needindustryexperience">
+            <Link to="/zuri.talent">
               <button className=" my-btn btn-red-outline">
                 I need industry experience
               </button>
@@ -71,7 +77,7 @@ const Landing = () => {
                       support.
                     </p>
                     <h3>
-                      <Link to="/newtoindustry">I want to be trained </Link>
+                      <Link to="/zuri.training">I want to be trained </Link>
                     </h3>
                   </div>
                 </div>
@@ -90,9 +96,13 @@ const Landing = () => {
                     are ready for actual work.{" "}
                   </p>
                   <h3>
-                    <Link to="https://internship.zuri.team/">
+                    <a
+                      href="https://internship.zuri.team/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       I want to join the internship{" "}
-                    </Link>
+                    </a>
                   </h3>
                 </div>
               </div>
@@ -116,9 +126,7 @@ const Landing = () => {
                       bring the best suited talent for your company
                     </p>
                     <h3>
-                      <Link to="/needindustryexperience">
-                        I am looking for talent{" "}
-                      </Link>
+                      <Link to="/zuri.talent">I am looking for talent </Link>
                     </h3>
                   </div>
                 </div>
@@ -162,22 +170,22 @@ const Landing = () => {
           <div className="flex-5">
             <h3>Follow Us</h3>
             <div className="contact-icons">
-              <Link target="_blank" to="https://web.facebook.com/thezuriteam">
+              <a target="_blank" to="https://web.facebook.com/thezuriteam">
                 {" "}
                 <img alt="" src="https://zuri.team/img/fb.png" />{" "}
-              </Link>
-              <Link target="_blank" to="https://twitter.com/theZuriTeam">
+              </a>
+              <a target="_blank" to="https://twitter.com/theZuriTeam">
                 {" "}
                 <img alt="" src="https://zuri.team/img/twitter.png" />{" "}
-              </Link>
-              <Link target="_blank" to="https://www.instagram.com/thezuriteam/">
+              </a>
+              <a target="_blank" to="https://www.instagram.com/thezuriteam/">
                 {" "}
                 <img alt="" src="https://zuri.team/img/IG.png" />{" "}
-              </Link>
-              <Link to="#">
+              </a>
+              <a to="#">
                 {" "}
                 <img alt="" src="https://zuri.team/img/in.png" />{" "}
-              </Link>
+              </a>
             </div>
           </div>
         </div>
