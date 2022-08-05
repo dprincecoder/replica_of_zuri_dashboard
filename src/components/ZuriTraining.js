@@ -62,6 +62,29 @@ const detailsCards = [
   },
 ];
 
+const moreActions = [
+  {
+    id: 1,
+    svgArt: "https://training.zuri.team/hand.svg",
+    title: "Teamwork",
+  },
+  {
+    id: 2,
+    svgArt: "https://training.zuri.team/mentor.svg",
+    title: "Mentorship",
+  },
+  {
+    id: 3,
+    svgArt: "https://training.zuri.team/practice.svg",
+    title: "Practice",
+  },
+  {
+    id: 4,
+    svgArt: "https://training.zuri.team/games.svg",
+    title: "Fun & Games",
+  },
+];
+
 const ZuriTraining = () => {
   return (
     <main>
@@ -278,6 +301,67 @@ const ZuriTraining = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="help-you">
+        <div className="help-you-grid">
+          <div className="help-you-grid-item grid-bx1">
+            <div className="help-you-grid-item-wire-wrap">
+              <img
+                src="https://training.zuri.team/section5wire.svg"
+                alt=""
+                className="help-you-wire-img"
+              />
+            </div>
+            <p className="help-you-grid-item-p">We will help you get started</p>
+            <h2 className="help-you-grid-item-h2">
+              High quality training with hands-on practice
+            </h2>
+            <p className="help-you-grid-item-p-b">
+              We give you weekly tasks, ranging from easy to complex, as you
+              progress from stage to stage; making it to the final stage means
+              you are now ready to continue learning and growing independently.
+            </p>
+            <div className="help-you-grid-item-link-wrap">
+              <a
+                href="https://training.zuri.team/enroll"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="help-you-grid-item-link"
+              >
+                Enroll Now
+              </a>
+            </div>
+            <div className="help-you-grid-item-moreactions">
+              {moreActions.map((action) => (
+                <div className="help-you-grid-item-moreactions-item">
+                  <img
+                    src={action.svgArt}
+                    alt=""
+                    className="help-you-grid-item-moreactions-item-img"
+                  />
+                  <p className="help-you-grid-item-moreactions-item-p">
+                    {action.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="help-you-grid-item-img-wrap grid-bx">
+            <img
+              src="https://training.zuri.team/section5-image.png"
+              alt=""
+              className="help-you-grid-item-img"
+            />
+          </div>
+        </div>
+        <div className="help-you-clip-art-wrap">
+          <img
+            src="https://training.zuri.team/dotsection5.svg"
+            alt=""
+            className="help-you-clip-art-img"
+          />
         </div>
       </section>
     </main>
