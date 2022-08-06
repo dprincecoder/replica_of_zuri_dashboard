@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/replica_of_zuri_dashboard/static/css/main.70cc1ffa.css",
+    "main.css": "/replica_of_zuri_dashboard/static/css/main.e3adac9c.css",
     "main.js": "/replica_of_zuri_dashboard/static/js/main.a2436929.js",
     "index.html": "/replica_of_zuri_dashboard/index.html",
-    "main.70cc1ffa.css.map": "/replica_of_zuri_dashboard/static/css/main.70cc1ffa.css.map",
+    "main.e3adac9c.css.map": "/replica_of_zuri_dashboard/static/css/main.e3adac9c.css.map",
     "main.a2436929.js.map": "/replica_of_zuri_dashboard/static/js/main.a2436929.js.map"
   },
   "entrypoints": [
-    "static/css/main.70cc1ffa.css",
+    "static/css/main.e3adac9c.css",
     "static/js/main.a2436929.js"
   ]
 }
