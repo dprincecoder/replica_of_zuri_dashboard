@@ -507,7 +507,197 @@ const ZuriTraining = () => {
           </div>
           <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
         </section>
+        <section className="programme_structure_section">
+          <div className="structure_header">
+            <img
+              src="https://training.zuri.team/section7wire.svg"
+              alt=""
+              className="structure_wire"
+            />
+            <img
+              src="https://training.zuri.team/Star1.svg"
+              alt=""
+              className="structure_star"
+            />
+            <p className="pre_structure_heading">Structure</p>
+
+            <h2 className="structure_heading">Program Structure</h2>
+            <p className="structure_sub_heading">
+              There are 2 broad paths in this program based on your
+              availability.
+            </p>
+          </div>
+
+          <div className="program_card_wrapper">
+            <div className="program_card">
+              <h2>Full-time</h2>
+              <p>Requires at least 25 hours weekly on program content.</p>
+              <h3>Available Tracks:</h3>
+              <ul className="programme_list">
+                <li>
+                  Full Stack: Backend (Python, JavaScript), Frontend (HTML, CSS,
+                  JavaScript) & DevOps
+                </li>
+                <li>Design: Figma, Adobe XD</li>
+              </ul>
+              <h3>Phases:</h3>
+              <ul className="programme_list">
+                <li>Training Phase</li>
+                <li>Project Phase</li>
+              </ul>
+              <h3>Post Program:</h3>
+              <ul className="programme_list">
+                <li>Certification of Attendance</li>
+                <li>
+                  Zuri Internship{" "}
+                  <img
+                    src="https://training.zuri.team/clarity.svg"
+                    className="clarity-svg"
+                  />
+                </li>
+                <li>
+                  Laptop Reward (upgrade or new one){" "}
+                  <img
+                    src="https://training.zuri.team/clarity.svg"
+                    className="clarity-svg"
+                  />
+                </li>
+                <li>
+                  Job Placement{" "}
+                  <img
+                    src="https://training.zuri.team/clarity.svg"
+                    className="clarity-svg"
+                  />
+                </li>
+                <li>Zuri Talent Pool </li>
+                <li>
+                  More Training:{" "}
+                  <img
+                    src="https://training.zuri.team/clarity.svg"
+                    className="clarity-svg"
+                  />
+                </li>
+                <li className="list_style_none">Interview Prep</li>
+                <li className="list_style_none">Algorithms & Data Structure</li>
+                <li className="list_style_none">Freelance Setup & Training</li>
+                <li className="list_style_none">LinkedIn Optimization</li>
+                <li className="list_style_none">CV Review</li>
+              </ul>
+
+              <img
+                src="https://training.zuri.team/hour.png"
+                alt=""
+                className="structure_img"
+              />
+            </div>
+            <div className="program_card">
+              <h1>Part-time</h1>
+              <p>Requires at least 11 hours weekly on program content.</p>
+              <h3>Available Tracks:</h3>
+              <ul className="programme_list">
+                <li>Frontend:</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Backend: Can only select one backend language</li>
+                <li className="list_style_none">Python,</li>
+                <li className="list_style_none">PHP,</li>
+                <li className="list_style_none">JavaScript</li>
+                <li>Design:</li>
+                <li className="list_style_none">Figma</li>
+              </ul>
+              <h3>Phases:</h3>
+              <ul className="programme_list">
+                <li>Training Phase</li>
+              </ul>
+              <h3>Post Program:</h3>
+              <ul className="programme_list">
+                <li>Certification of Attendance</li>
+                <li>Zuri Internship</li>
+              </ul>
+              <img
+                src="https://training.zuri.team/time.png"
+                alt=""
+                className="structure_img"
+              />
+            </div>
+          </div>
+          <img
+            src="https://training.zuri.team/circle.png"
+            alt=""
+            className="structure_circle"
+          />
+
+          <img
+            src="https://training.zuri.team/move.svg"
+            alt=""
+            className="structure_move"
+          />
+        </section>
+        <section className="industry_section">
+          <img
+            src="https://training.zuri.team/circle.png"
+            alt=""
+            className="industry_circle_img"
+          />
+          <div className="industry_box">
+            <img
+              src="https://training.zuri.team/round.svg"
+              alt=""
+              className="industry_box_round"
+            />
+            <img
+              src="https://training.zuri.team/bend1.svg"
+              alt=""
+              className="industry_box_bend"
+            />
+            <img
+              src="https://training.zuri.team/mains.png"
+              alt=""
+              className="industry_box_main"
+            />
+            <img
+              src="https://training.zuri.team/curve2.svg"
+              alt=""
+              className="industry_box_bend2"
+            />
+            <p className="industry_start">Get Started</p>
+            <h1 className="industry_heading">
+              Break into the tech industry like a Pro
+            </h1>
+            <button className="industry_btn">Enroll now</button>
+          </div>
+        </section>
       </main>
+      <footer>
+        <div className="footer_img_wrapper">
+          <img src="https://training.zuri.team/logo.svg" alt="" />
+          <div className="all_social">
+            <a target="_blank" to="https://web.facebook.com/thezuriteam">
+              {" "}
+              <img alt="" src="https://training.zuri.team/facebook.svg" />{" "}
+            </a>
+            <a target="_blank" to="https://www.linkedin.com/company/zuri-team">
+              {" "}
+              <img alt="" src="https://training.zuri.team/linkd.svg" />{" "}
+            </a>
+            <a target="_blank" to="https://twitter.com/thezuriteam">
+              {" "}
+              <img alt="" src="https://training.zuri.team/twitter.svg" />{" "}
+            </a>
+            <a to="https://www.youtube.com/thezuriteam">
+              {" "}
+              <img alt="" src="https://training.zuri.team/youtube.svg" />{" "}
+            </a>
+          </div>
+        </div>
+
+        <div className="copyright_policy">
+          <p>© 2022 Zuri Training</p>
+          <p >
+            <span>Privacy Policy</span>{" "}
+            <span>&nbsp;&nbsp;&nbsp; Ingressive For Good</span>
+          </p>
+        </div>
+      </footer>
     </>
   );
 };
