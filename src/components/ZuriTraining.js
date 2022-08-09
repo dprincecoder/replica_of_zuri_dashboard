@@ -85,6 +85,69 @@ const moreActions = [
   },
 ];
 
+const scopeOfProgramCards = [
+  {
+    id: 1,
+    title: "Frontend Developent",
+    svgs: [
+      "https://training.zuri.team/html.svg",
+      "https://training.zuri.team/css-3%20logo.svg",
+      "https://training.zuri.team/javascript%20logo.svg",
+    ],
+    desc: "This track deals with the aspect of your application that the users interact with. A front-end developer will be able to correctly interpret a given design to the user interface.",
+  },
+  {
+    id: 2,
+    title: "Backend Developent",
+    svgs: [
+      "https://training.zuri.team/php2%20logo.svg",
+      "https://training.zuri.team/python-4%20logo.svg",
+      "https://training.zuri.team/javascript%20logo.svg",
+    ],
+    desc: "This track deals with the aspect of the application the user does not directly interact with. It allows the frontend function either by running some back-end code or connecting to the database.",
+  },
+  {
+    id: 3,
+    title: "Product Design",
+    svgs: [
+      "https://training.zuri.team/adobe-xd%20logo.svg",
+      "https://training.zuri.team/Figma%20logo.svg",
+    ],
+    desc: "This track deals with creating a graphic plan for an application. You will learn to convert project documentation into viewable and understandable graphic design for the developers to work with.",
+  },
+  {
+    id: 4,
+    title: "DevOPS",
+    svgs: [
+      "https://training.zuri.team/Ubuntu%20logo.svg",
+      "https://training.zuri.team/Bash%20logo.svg",
+      "https://training.zuri.team/aws%20logo.svg",
+    ],
+    desc: "The DevOps track is an extension of the backend track. It involves tools that’ll allow the participant to deploy solutions for public use.",
+  },
+  {
+    id: 5,
+    title: "Fullstack Developent",
+    svgs: [
+      "https://training.zuri.team/php2%20logo.svg",
+      "https://training.zuri.team/css-3%20logo.svg",
+      "https://training.zuri.team/javascript%20logo.svg",
+      "https://training.zuri.team/python-4%20logo.svg",
+    ],
+    desc: "A combination of frontend, backend, and DevOps. This track will only be available to participants who have the time to dedicate to the training.",
+  },
+  {
+    id: 6,
+    title: "Frameworks",
+    svgs: [
+      "https://training.zuri.team/Laravel%20logo.svg",
+      "https://training.zuri.team/React%20logo.svg",
+      "https://training.zuri.team/Django%20logo.svg",
+    ],
+    desc: "During the program we will be exploring several useful frameworks to give you an edge in the industry and help you develop complex applications much faster.",
+  },
+];
+
 const ZuriTraining = () => {
   return (
     <main>
@@ -362,6 +425,46 @@ const ZuriTraining = () => {
             alt=""
             className="help-you-clip-art-img"
           />
+        </div>
+      </section>
+
+      <section className="scope">
+        <div className="scope-main">
+          <div className="scope-main-text">
+            <div className="scope-main-text-text">
+              <p className="scope-p">Scope Of Program</p>
+              <h2 className="scope-h2">
+                Here is the list of areas that will be explored in the training.
+              </h2>
+            </div>
+            <div className="scope-main-text-svg-wrap">
+              <img
+                src="https://training.zuri.team/section6.svg"
+                alt=""
+                className="scope-wire"
+              />
+            </div>
+          </div>
+          <div className="scope-main-cards">
+            {scopeOfProgramCards.map((card) => (
+              <div className="scope-card-wrapper">
+                <h3 className="scope-main-card-text">{card.title}</h3>
+                <div className="scope-card-svgs">
+                  {card.svgs.map((svgs) => (
+                    <img src={svgs} alt="" className="scope-card-svg-img" />
+                  ))}
+                </div>
+                <p className="scope-main-desc">{card.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="scope-btn-wrap">
+            <div className="scope-enrol-btn-wrap">
+              <a href="" className="scope-enroll-link">
+                Enroll Now
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

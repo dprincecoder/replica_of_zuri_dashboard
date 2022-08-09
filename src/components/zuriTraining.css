@@ -67,8 +67,8 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #e7332b !important;
-  border: 10px solid #e7332b !important;
+  background-color: #e7332b;
+  border: 10px solid #e7332b;
   z-index: 1;
 }
 
@@ -597,6 +597,12 @@ a:hover {
   margin-bottom: 1rem;
   padding-bottom: 2rem;
 }
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .help-you {
+    width: 100%;
+    padding: 1rem 2rem 1rem 0;
+  }
+}
 
 .help-you-grid {
   display: flex;
@@ -607,7 +613,7 @@ a:hover {
   .help-you-grid {
     flex-direction: column;
     padding: 0;
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -629,7 +635,7 @@ a:hover {
     width: 100%;
   }
   .help-you-grid-item-img-wrap {
-    width: 350px;
+    width: 300px;
     height: 350px;
   }
 }
@@ -675,7 +681,7 @@ a:hover {
 }
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .help-you-grid-item-h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .help-you-grid-item-p-b {
@@ -690,9 +696,10 @@ a:hover {
 }
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .help-you-grid-item-p-b {
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 30px;
-    width: 100%;
+    width: 100% !important;
+    text-align: justify;
   }
 }
 
@@ -779,13 +786,19 @@ a:hover {
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .help-you-grid-item-moreactions-item {
     font-size: 12px;
-    padding: 2px 5px;
+    padding: 0 5px;
+    /* width: fit-content; */
   }
 }
 
 .help-you-grid-item-moreactions-item-img {
   width: 40px;
   margin-right: 10px;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .help-you-grid-item-moreactions-item-img {
+    width: 30px;
+  }
 }
 
 .help-you-grid-item-moreactions-item-p {
@@ -807,5 +820,159 @@ a:hover {
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .help-you-clip-art-img {
     width: 50px;
+    margin-left: 2rem;
   }
+}
+
+.scope {
+  margin: auto;
+  background: rgb(255, 253, 245);
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .scope {
+    padding-bottom: 1rem;
+  }
+}
+
+.scope-main {
+  padding: 3rem;
+}
+
+.scope-main-text-text {
+  width: 50%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .scope-main {
+    padding: 1rem;
+  }
+
+  .scope-main-text-text {
+    width: 100%;
+  }
+}
+
+.scope-p {
+  color: #e7332b;
+  font-family: Graphik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.scope-h2 {
+  color: #1b1a20;
+  font-family: Graphik;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .scope-h2 {
+    font-size: 18px;
+    width: 80%;
+  }
+}
+
+.scope-main-text-svg-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scope-wire {
+  width: 120px;
+}
+
+.scope-main-cards {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .scope-main-cards {
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    width: fit-content;
+  }
+}
+
+.scope-card-wrapper {
+  /* padding: 1rem; */
+  background: #fff;
+  border-radius: 41px;
+  box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+  padding: 40px;
+  height: fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .scope-card-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.scope-main-card-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .scope-main-card-text {
+    font-size: 15px;
+  }
+}
+
+.scope-card-svgs {
+  display: flex;
+  /* margin: 1rem; */
+  padding: 1rem;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .scope-card-svgs {
+    padding: 0;
+  }
+}
+
+.scope-card-svg-img {
+  margin-right: 1rem;
+  width: 45px;
+}
+
+.scope-main-desc {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 140%;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.scope-enrol-btn-wrap {
+  background: #e7332b;
+  border-radius: 87px;
+  padding: 14px 30px;
+  margin: 2rem 0;
+}
+
+.scope-enroll-link {
+  color: white;
+}
+
+.scope-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
 }
