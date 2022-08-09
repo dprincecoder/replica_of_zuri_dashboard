@@ -1,4 +1,6 @@
 import React from "react";
+import Faqs from "./faqs/Faqs";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import "./zuriTraining.css";
 
 const detailsCards = [
@@ -150,7 +152,7 @@ const scopeOfProgramCards = [
 
 const ZuriTraining = () => {
   return (
-    <main>
+    <>
       <nav className="zuriTraining-nav">
         <div className="zuriTraining-navWrapper">
           <div className="training-logo">
@@ -195,279 +197,318 @@ const ZuriTraining = () => {
           </div>
         </div>
       </nav>
-
-      <section className="training-hero">
-        <div className="hero-wrap">
-          <div className="lady-svg-wrapper">
-            <img
-              alt=""
-              className="lady-svg-img"
-              src="https://training.zuri.team/lady1.jpg"
-            />
+      <main className="main-content">
+        <section className="training-hero">
+          <div className="hero-wrap">
+            <div className="lady-svg-wrapper">
+              <img
+                alt=""
+                className="lady-svg-img"
+                src="https://training.zuri.team/lady1.jpg"
+              />
+            </div>
+            <div className="typography-wrap">
+              <div className="typography-feature">
+                <p className="smp-text">And now your search has ended...</p>
+                <h1>
+                  Gain knowledge to help you scale through the tech industry for
+                  free.
+                </h1>
+                <span className="vector-lne">
+                  <img
+                    src="https://training.zuri.team/line.svg"
+                    alt=""
+                    className="vector-line-img"
+                  />
+                </span>
+                <p className="dm-txt">
+                  A basic introduction to software development and product
+                  design aimed at complete beginners, which anyone can join
+                </p>
+                <div className="btn-wrap">
+                  <a
+                    href="https://training.zuri.team/enroll"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-enroll-training"
+                  >
+                    {" "}
+                    Enroll Now{" "}
+                  </a>
+                </div>
+                <div className="lines">
+                  <img
+                    src="https://training.zuri.team/maleface.svg"
+                    alt=""
+                    className="maleface-svg"
+                  />
+                  <img
+                    src="https://training.zuri.team/section1wire.svg"
+                    alt=""
+                    className="wire-svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="man-svg-wrapper">
+              <img
+                className="man-svg-img"
+                src="https://training.zuri.team/male1.jpg"
+                alt=""
+              />
+            </div>
           </div>
-          <div className="typography-wrap">
-            <div className="typography-feature">
-              <p className="smp-text">And now your search has ended...</p>
-              <h1>
-                Gain knowledge to help you scale through the tech industry for
-                free.
-              </h1>
-              <span className="vector-lne">
-                <img
-                  src="https://training.zuri.team/line.svg"
-                  alt=""
-                  className="vector-line-img"
-                />
-              </span>
-              <p className="dm-txt">
-                A basic introduction to software development and product design
-                aimed at complete beginners, which anyone can join
+        </section>
+        <section className="about">
+          <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
+          <div className="about-grid">
+            <div className="typography-box">
+              <p className="typography-ft-lrg">
+                Ingressive for Good was launched in July 2020 with No dollar in
+                donation...
               </p>
-              <div className="btn-wrap">
+            </div>
+            <div className="typography-box">
+              <div className="about-focus-img-wrap">
+                <img
+                  alt=""
+                  className="about-focus-img"
+                  src="https://training.zuri.team/ingresive.jpg"
+                />
+              </div>
+            </div>
+            <div className="typography-box esp  ">
+              <div className="coln">
+                <p className="typography-ft-sml">
+                  to help increase the earning power of African youths by
+                  providing them with tech skills, community, tools, resources,
+                  and jobs...{" "}
+                  <span className="readmore-span">
+                    <a
+                      href="https://ingressive.org/i4g-in-2021/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="read-or-hide"
+                    >
+                      Read More
+                    </a>
+                  </span>
+                </p>{" "}
+              </div>
+            </div>
+          </div>
+          <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
+        </section>
+        <section className="why-us">
+          <div className="why-us-grid">
+            <div className="why-us-train train-bx">
+              <div className="why-us-train-wire-wrap">
+                <img
+                  alt=""
+                  className="why-us-train-wire-img"
+                  src="https://training.zuri.team/section3wire.svg"
+                />
+              </div>
+              <div className="why-us-train-text-wrap">
+                <h2 className="why-us-train-text-title">Why Zuri Training?</h2>
+                <p className="why-us-train-text-desc">
+                  Here at Zuri, you gain access to enough knowledge to introduce
+                  and aid your success in the tech industry.
+                </p>
+              </div>
+            </div>
+            <div className="star-svg-wrap train-bx">
+              <img
+                alt=""
+                className="star-svg-img"
+                src="https://training.zuri.team/Star.jpg"
+              />
+            </div>
+          </div>
+        </section>{" "}
+        <section className="details-cards-container">
+          <div className="details-cards-grid">
+            {detailsCards.map((card) => (
+              <div
+                className="details-card-wrap"
+                key={card.id}
+                style={{ background: `${card.bg}` }}
+              >
+                <div className="details-card-img-wrap">
+                  <img alt="" className="details-card-img" src={card.svgArt} />
+                </div>
+                <div className="details-card-num-wrap">
+                  <p
+                    className="details-card-num"
+                    style={{ color: `${card.color}` }}
+                  >
+                    {card.num}
+                  </p>
+                </div>
+                <div className="details-card-title-wrap">
+                  <p
+                    className="details-card-title"
+                    style={{ color: `${card.color}` }}
+                  >
+                    {card.title}
+                  </p>
+                </div>
+                <div className="details-card-text-wrap">
+                  <p
+                    className="details-card-text"
+                    style={{ color: `${card.color}` }}
+                  >
+                    {card.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="help-you">
+          <div className="help-you-grid">
+            <div className="help-you-grid-item grid-bx1">
+              <div className="help-you-grid-item-wire-wrap">
+                <img
+                  src="https://training.zuri.team/section5wire.svg"
+                  alt=""
+                  className="help-you-wire-img"
+                />
+              </div>
+              <p className="help-you-grid-item-p">
+                We will help you get started
+              </p>
+              <h2 className="help-you-grid-item-h2">
+                High quality training with hands-on practice
+              </h2>
+              <p className="help-you-grid-item-p-b">
+                We give you weekly tasks, ranging from easy to complex, as you
+                progress from stage to stage; making it to the final stage means
+                you are now ready to continue learning and growing
+                independently.
+              </p>
+              <div className="help-you-grid-item-link-wrap">
                 <a
                   href="https://training.zuri.team/enroll"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-enroll-training"
+                  className="help-you-grid-item-link"
                 >
-                  {" "}
-                  Enroll Now{" "}
+                  Enroll Now
                 </a>
               </div>
-              <div className="lines">
-                <img
-                  src="https://training.zuri.team/maleface.svg"
-                  alt=""
-                  className="maleface-svg"
-                />
-                <img
-                  src="https://training.zuri.team/section1wire.svg"
-                  alt=""
-                  className="wire-svg"
-                />
+              <div className="help-you-grid-item-moreactions">
+                {moreActions.map((action) => (
+                  <div className="help-you-grid-item-moreactions-item">
+                    <img
+                      src={action.svgArt}
+                      alt=""
+                      className="help-you-grid-item-moreactions-item-img"
+                    />
+                    <p className="help-you-grid-item-moreactions-item-p">
+                      {action.title}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
+            <div className="help-you-grid-item-img-wrap grid-bx">
+              <img
+                src="https://training.zuri.team/section5-image.png"
+                alt=""
+                className="help-you-grid-item-img"
+              />
+            </div>
           </div>
-          <div className="man-svg-wrapper">
+          <div className="help-you-clip-art-wrap">
             <img
-              className="man-svg-img"
-              src="https://training.zuri.team/male1.jpg"
+              src="https://training.zuri.team/dotsection5.svg"
               alt=""
+              className="help-you-clip-art-img"
             />
           </div>
-        </div>
-      </section>
-
-      <section className="about">
-        <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
-        <div className="about-grid">
-          <div className="typography-box">
-            <p className="typography-ft-lrg">
-              Ingressive for Good was launched in July 2020 with No dollar in
-              donation...
-            </p>
-          </div>
-          <div className="typography-box">
-            <div className="about-focus-img-wrap">
-              <img
-                alt=""
-                className="about-focus-img"
-                src="https://training.zuri.team/ingresive.jpg"
-              />
-            </div>
-          </div>
-          <div className="typography-box esp  ">
-            <div className="coln">
-              <p className="typography-ft-sml">
-                to help increase the earning power of African youths by
-                providing them with tech skills, community, tools, resources,
-                and jobs...{" "}
-                <span className="readmore-span">
-                  <a
-                    href="https://ingressive.org/i4g-in-2021/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="read-or-hide"
-                  >
-                    Read More
-                  </a>
-                </span>
-              </p>{" "}
-            </div>
-          </div>
-        </div>
-        <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
-      </section>
-
-      <section className="why-us">
-        <div className="why-us-grid">
-          <div className="why-us-train train-bx">
-            <div className="why-us-train-wire-wrap">
-              <img
-                alt=""
-                className="why-us-train-wire-img"
-                src="https://training.zuri.team/section3wire.svg"
-              />
-            </div>
-            <div className="why-us-train-text-wrap">
-              <h2 className="why-us-train-text-title">Why Zuri Training?</h2>
-              <p className="why-us-train-text-desc">
-                Here at Zuri, you gain access to enough knowledge to introduce
-                and aid your success in the tech industry.
-              </p>
-            </div>
-          </div>
-          <div className="star-svg-wrap train-bx">
-            <img
-              alt=""
-              className="star-svg-img"
-              src="https://training.zuri.team/Star.jpg"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="details-cards-container">
-        <div className="details-cards-grid">
-          {detailsCards.map((card) => (
-            <div
-              className="details-card-wrap"
-              key={card.id}
-              style={{ background: `${card.bg}` }}
-            >
-              <div className="details-card-img-wrap">
-                <img alt="" className="details-card-img" src={card.svgArt} />
+        </section>
+        <section className="scope">
+          <div className="scope-main">
+            <div className="scope-main-text">
+              <div className="scope-main-text-text">
+                <p className="scope-p">Scope Of Program</p>
+                <h2 className="scope-h2">
+                  Here is the list of areas that will be explored in the
+                  training.
+                </h2>
               </div>
-              <div className="details-card-num-wrap">
-                <p
-                  className="details-card-num"
-                  style={{ color: `${card.color}` }}
-                >
-                  {card.num}
-                </p>
-              </div>
-              <div className="details-card-title-wrap">
-                <p
-                  className="details-card-title"
-                  style={{ color: `${card.color}` }}
-                >
-                  {card.title}
-                </p>
-              </div>
-              <div className="details-card-text-wrap">
-                <p
-                  className="details-card-text"
-                  style={{ color: `${card.color}` }}
-                >
-                  {card.description}
-                </p>
+              <div className="scope-main-text-svg-wrap">
+                <img
+                  src="https://training.zuri.team/section6.svg"
+                  alt=""
+                  className="scope-wire"
+                />
               </div>
             </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="help-you">
-        <div className="help-you-grid">
-          <div className="help-you-grid-item grid-bx1">
-            <div className="help-you-grid-item-wire-wrap">
-              <img
-                src="https://training.zuri.team/section5wire.svg"
-                alt=""
-                className="help-you-wire-img"
-              />
-            </div>
-            <p className="help-you-grid-item-p">We will help you get started</p>
-            <h2 className="help-you-grid-item-h2">
-              High quality training with hands-on practice
-            </h2>
-            <p className="help-you-grid-item-p-b">
-              We give you weekly tasks, ranging from easy to complex, as you
-              progress from stage to stage; making it to the final stage means
-              you are now ready to continue learning and growing independently.
-            </p>
-            <div className="help-you-grid-item-link-wrap">
-              <a
-                href="https://training.zuri.team/enroll"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="help-you-grid-item-link"
-              >
-                Enroll Now
-              </a>
-            </div>
-            <div className="help-you-grid-item-moreactions">
-              {moreActions.map((action) => (
-                <div className="help-you-grid-item-moreactions-item">
-                  <img
-                    src={action.svgArt}
-                    alt=""
-                    className="help-you-grid-item-moreactions-item-img"
-                  />
-                  <p className="help-you-grid-item-moreactions-item-p">
-                    {action.title}
-                  </p>
+            <div className="scope-main-cards">
+              {scopeOfProgramCards.map((card) => (
+                <div className="scope-card-wrapper">
+                  <h3 className="scope-main-card-text">{card.title}</h3>
+                  <div className="scope-card-svgs">
+                    {card.svgs.map((svgs) => (
+                      <img src={svgs} alt="" className="scope-card-svg-img" />
+                    ))}
+                  </div>
+                  <p className="scope-main-desc">{card.desc}</p>
                 </div>
               ))}
             </div>
-          </div>
-          <div className="help-you-grid-item-img-wrap grid-bx">
-            <img
-              src="https://training.zuri.team/section5-image.png"
-              alt=""
-              className="help-you-grid-item-img"
-            />
-          </div>
-        </div>
-        <div className="help-you-clip-art-wrap">
-          <img
-            src="https://training.zuri.team/dotsection5.svg"
-            alt=""
-            className="help-you-clip-art-img"
-          />
-        </div>
-      </section>
-
-      <section className="scope">
-        <div className="scope-main">
-          <div className="scope-main-text">
-            <div className="scope-main-text-text">
-              <p className="scope-p">Scope Of Program</p>
-              <h2 className="scope-h2">
-                Here is the list of areas that will be explored in the training.
-              </h2>
-            </div>
-            <div className="scope-main-text-svg-wrap">
-              <img
-                src="https://training.zuri.team/section6.svg"
-                alt=""
-                className="scope-wire"
-              />
-            </div>
-          </div>
-          <div className="scope-main-cards">
-            {scopeOfProgramCards.map((card) => (
-              <div className="scope-card-wrapper">
-                <h3 className="scope-main-card-text">{card.title}</h3>
-                <div className="scope-card-svgs">
-                  {card.svgs.map((svgs) => (
-                    <img src={svgs} alt="" className="scope-card-svg-img" />
-                  ))}
-                </div>
-                <p className="scope-main-desc">{card.desc}</p>
+            <div className="scope-btn-wrap">
+              <div className="scope-enrol-btn-wrap">
+                <a href="" className="scope-enroll-link">
+                  Enroll Now
+                </a>
               </div>
-            ))}
-          </div>
-          <div className="scope-btn-wrap">
-            <div className="scope-enrol-btn-wrap">
-              <a href="" className="scope-enroll-link">
-                Enroll Now
-              </a>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+        <section className="faqs">
+          <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
+          <div className="faqs-container">
+            <div className="faqs-text-container">
+              <div className="faqs-svg-wrap">
+                <img
+                  src="https://training.zuri.team/section7wire.svg"
+                  alt=""
+                  className="faqs-wire"
+                />
+              </div>
+              <div className="faqs-text-wrap">
+                <p>Got Questions?</p>
+                <h2>Frequently Asked Questions</h2>
+              </div>
+              <div className="faqs-text-desc-wrap"></div>
+            </div>
+            <div className="faqs-questions-wrapper">
+              <Faqs />
+            </div>
+            <div className="faqs-more">
+              <div className="faqs-more-wrap">
+                <div className="faqs-more-text">
+                  <p>Still got Questions?</p>
+                </div>
+                <div className="faqs-more-btn-wrap">
+                  <a
+                    href="https://twitter.com/thezuriteam"
+                    className="faqs-more-btn"
+                  >
+                    <TwitterIcon className="twit-svg" />
+                    Tweet them at us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="MuiDivider-root MuiDivider-fullWidth css-39bbo6" />
+        </section>
+      </main>
+    </>
   );
 };
 

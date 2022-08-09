@@ -5,7 +5,7 @@ const ZuriTalent = () => {
   return (
     <>
       <nav className='zuriTalent-nav'>
-
+        currently in development
       </nav>
     </>
   );
