@@ -3,7 +3,7 @@ import "./zuriTalent.css";
 
 const ZuriTalent = () => {
   return (
-    <>
+    <div className="body-talent">
       <nav>
         <div className="nav_box">
           <div className="logo">
@@ -38,7 +38,7 @@ const ZuriTalent = () => {
               <img
                 src="https://talent.zuri.team/thick2.svg"
                 alt=""
-                className="thick_hero"
+                className="thick_hero-line-svg"
               />
             </h1>
             <p className="hero_txt_sm">
@@ -47,8 +47,10 @@ const ZuriTalent = () => {
               Industry.
             </p>
             <div className="hero_btn_box">
-              <button className="hero_hire">Hire talents</button>
-              <button className="join_talent_pool">Join Talent pool</button>
+              <button className="hero_hire hero-b">Hire talents</button>
+              <button className="join_talent_pool hero-b">
+                Join Talent pool
+              </button>
             </div>
           </div>
           <div className="hero_img">
@@ -229,11 +231,10 @@ const ZuriTalent = () => {
             </a>
           </div>
         </div>
-        <hr className="footer_rule" />
 
         <div className="copyright">
           <p>© Copyright 2022 ZURI TEAM. All rights Reserved</p>
-          <p>
+          <p className="footer-ruler">
             <a
               href="mailto:talent@zuri.team"
               style={{
@@ -244,10 +245,11 @@ const ZuriTalent = () => {
             >
               talent@zuri.team
             </a>
+            <hr class="MuiDivider-root MuiDivider-fullWidth css-39bbo6 footer-ruler" />{" "}
           </p>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 
