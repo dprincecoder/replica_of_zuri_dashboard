@@ -132,7 +132,7 @@ const ZuriTalent = () => {
           </div>
           <div className="tag_box">
             <h1 className="needed_talent">Where our talents work</h1>
-            <div className="btn_wrapper wrapper2">
+            <div className="btn_wrapper wrapper1">
               <button className="tag_btn">GitHub</button>
               <button className="tag_btn">Microsoft</button>
               <button className="tag_btn">Reskill Americans</button>

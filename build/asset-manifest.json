@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/replica_of_zuri_dashboard/static/css/main.1bedbdbd.css",
+    "main.js": "/replica_of_zuri_dashboard/static/js/main.133d8dcc.js",
+    "index.html": "/replica_of_zuri_dashboard/index.html",
+    "main.1bedbdbd.css.map": "/replica_of_zuri_dashboard/static/css/main.1bedbdbd.css.map",
+    "main.133d8dcc.js.map": "/replica_of_zuri_dashboard/static/js/main.133d8dcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bedbdbd.css",
+    "static/js/main.133d8dcc.js"
+  ]
+}

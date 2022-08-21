@@ -373,8 +373,13 @@ nav {
 }
 .btn_wrapper {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+
   gap: 1vw;
   margin: 2vh 0;
+}
+.wrapper1 {
+  width: 80%;
 }
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .tags_section {
@@ -419,6 +424,9 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin: 3rem 0;
+  }
+  .wrapper1 {
+    width: 100%;
   }
 }
 
@@ -509,10 +517,6 @@ nav {
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .why_hire_btn {
     margin-top: 3rem;
-  }
-  .hero_hire,
-  .join_talent_pool {
-    /* padding: 1rem 2rem; */
   }
 }
 
